@@ -1,0 +1,123 @@
+#Sign-Up{
+  width: 100%;
+  overflow: hidden;
+  font-family: Arial;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image:linear-gradient(rgba(0,0,0,0.05),#0d2244),url(Images/BG2);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+
+.Sign-up {
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 15px;
+  padding-left: 15px;
+  line-height: 40px;
+}
+
+
+.title {
+  text-align: center;
+  color: #2691d9;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+.Sign-up form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.login-button {
+  margin-bottom: 30px;
+}
+
+form .text-field {
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  width: 95%;
+  margin: 20px 0;
+}
+
+.text-field input {
+  background: none;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.text-field label {
+  position: absolute;
+  top: 50%;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  left: 4px;
+  transition: 0.5s;
+}
+
+.text-field span::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #2691d9;
+}
+.text-field input:focus ~ label,
+.text-field input:valid ~ label{
+  top: -5px;
+  color: #2691d9;
+}
+.text_field input:focus ~ span::before,
+.text_field input:valid ~ span::before{
+  width: 100%;
+}
+        
+.F-pass {
+  color: #2691d9;
+  text-decoration: underline;
+}
+
+.F-pass:hover {
+  cursor: pointer;
+}
+
+.login-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-button button {
+  flex-basis: 48%;
+  border-radius: 20px;
+  background: #2691d9;
+  color: white;
+  height: 40px;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  transition: back ground 1s;
+}
+
+.login-button:active {
+  background: #adadad;
+}
+
+.input-group {
+  height: 400px;
+}
